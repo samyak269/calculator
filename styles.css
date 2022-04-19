@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background:rgb(18, 18, 18);
+}
+.calculator{
+    position:relative;
+   
+   
+}
+.calculator .value{
+   
+    text-overflow: ellipsis;
+    width:320px;
+    height:140px;
+    text-align:right;
+    border: none;
+    outline: none;
+    padding:30px;
+    font-size: 25px;
+    
+   
+}
+.container{
+    display:grid;
+    grid-template-columns:80px 80px 80px 80px;
+    border: none;
+    outline: none; 
+    font-size: 20px;
+}
+.calculator span{
+    font-size: 25px;
+    display:grid;
+    width:80px;
+    height:80px;
+    color:white;
+    background:rgb(55, 55, 55);
+    place-items: center;
+}
+.calculator span:active{
+    background:rgb(81, 81, 81);
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+}
+.calculator span.clear{
+    background:rgb(41, 41, 41);
+    width:100%;
+  
+}
+.calculator span.plus{
+  grid-area: 3/ 4 /5 /5 ;
+  height:100%;
+  
+}
+
+.calculator span.equal{
+    background:rgb(41, 41, 41);
+    
+}
+.calculator span.equal:active{
+    background:rgb(41, 41, 41);
+    color:rgb(32, 174, 77);
+    font-size: 29px;
+}
